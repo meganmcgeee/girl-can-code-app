@@ -1,8 +1,10 @@
 import React from 'react';
-import './Index.scss';
+import './css/style.css';
+import './css/normalize.css';
+import './css/skeleton.css';
 
 export default () => (
   <div className="index">
-    Index
+    HI I'm skel in react
   </div>
 );
