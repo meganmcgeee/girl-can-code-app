@@ -1,3 +1,4 @@
+
 /*Navigation*/
 .nav {
   text-align: right;
@@ -121,4 +122,15 @@ a {
   background-image: -webkit-linear-gradient(90deg, #FF0684 0%, #e74c3c  100%);
   background-image: -ms-linear-gradient(90deg, #FF0684 0%, #e74c3c 100%);
 
+}
+
+/*Typewriter*/
+.about span::after {
+  content: '|';
+  color: #000;
+  font-size: 18px;
+}
+
+.about{
+  padding-top: 10%;
 }

@@ -54,10 +54,7 @@
     <!-- Nav -->
     <div class="row">
       <div class="twelve columns" style="margin-top: 5%">
-        <h2>Girl Can Code is</h2>
-        <p> an information resource and an initiative to create <a href="https://github.com/gracielovelace/">open-source projects</a> that inspire and support aspiring and existing female software engineers. This work is inspired by using Tracy Chou's work, <a href="https://github.com/triketora/women-in-software-eng">women-in-eng</a>, which is a working list of the perecntage of female software engineers employed full-time residing in the continental United States.</p>
-        <p> Here you will find <a href="resources.html">resources</a> for the aspiring software engineers and <a href="organizations.html">organizations</a>, specifically for aspiring female technologists.<br> <br><b> <a href="https://github.com/gracielovelace">Here's</a> another to fight the good fight.</b></p>
-      
+        <div class="about"><p>Girl Can Code <span></span></p> </div>
       </div>
     </div>
   </div>
@@ -65,4 +62,26 @@
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
+<script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+<script>var aboutContinued = [" is resource and an initiative to create open-source coding projects that inspire and engage and aspiring and existing female software engineers. " ];
+var i = 0;
+
+textChange(i);
+
+function textChange(counter) {
+  $.each(aboutContinued[counter].split(''), function(n, letter){
+    setTimeout(function(){
+      $('.about span').html($('.about span').html() + letter);
+      if(n == (aboutContinued[counter].length - 1)){
+        if( counter <  Object.keys(aboutContinued).length - 1){
+          counter++;
+          setTimeout(function(){
+            $('.about span').html('');
+            textChange(counter);
+          },1200);
+        }
+      }
+    }, 110 * n);
+  });
+}</script>
 </html>
