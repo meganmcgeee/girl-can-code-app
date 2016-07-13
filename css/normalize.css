@@ -17,7 +17,7 @@ html {
  */
 
 body {
-  margin: 0 200px;
+  margin: 0;
 }
 
 /* HTML5 display definitions
@@ -40,7 +40,7 @@ header,
 hgroup,
 main,
 menu,
-
+nav,
 section,
 summary {
   display: block;
@@ -201,7 +201,7 @@ svg:not(:root) {
  */
 
 figure {
-  margin: 1em 20px;
+  margin: 1em 40px;
 }
 
 /**

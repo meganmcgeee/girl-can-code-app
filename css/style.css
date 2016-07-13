@@ -22,19 +22,19 @@
   text-decoration: none;
 }
 a:link {
-    color: #551a8b;
+    color: #8E388E;
     text-decoration: none;
 
 
 }
 a:visited {
         text-decoration: none;
-color: #551a8b;
+color: #8E388E;
 
 }
 a:hover {
 text-decoration: underline;
-color: #551a8b;
+color: #8E388E;
 
 }
 /*Social Icons*/
@@ -66,13 +66,13 @@ a {
   margin: 0 4px;
 }
 .social-icons i  {
-    font-size: 24px;
+    font-size: 16px;
     height: 64px;
     line-height: 64px;
     text-align: center;
     width: 64px;
     border-radius: 100%;
-    color: #551a8b;
+    color: #8E388E;
     /*box-shadow: inset 0 0 0 1px #551a8b;*/
     position: relative;
     cursor: crosshair;
@@ -132,5 +132,48 @@ a {
 }
 
 .about{
-  padding-top: 10%;
+  padding-top: 20%;
+  text-align: center;
 }
+/*Fade in*/
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.fade-in.one {
+  -webkit-animation-delay: 10.0s;
+  -moz-animation-delay: 10.0s;
+  animation-delay: 10.0s;
+}
+/*
+.fade-in.two {
+  -webkit-animation-delay: 1.2s;
+  -moz-animation-delay:1.2s;
+  animation-delay: 1.2s;
+}
+
+.fade-in.three {
+  -webkit-animation-delay: 1.6s;
+  -moz-animation-delay: 1.6s;
+  animation-delay: 1.6s;
+}
+
+.element{
+
+}*/

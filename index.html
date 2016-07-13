@@ -33,28 +33,31 @@
 <!--  -->
 </head>
 <body>
-  <!--  Social Buttons-->
+  <!--  Nav-->
     <div class="twelve columns" style="margin-top: 5%">
-      <nav class="nav">
-        <ul class="nav-links">
-          <li class="nav-link"><a href="index.html">Home</a></li>
-          <li class="nav-link"><a href="resources.html">Resources</a></li>
-          <li class="nav-link"><a href="organizations.html">Organizations</a></li>
-          <li class="nav-link"><a href="contribute.html">Contribute</a></li>
-          <li class="nav-link"><a href="projects.html">Projects</a></li>
-        </ul>
-        <ul class="social-icons">
-          <li class="icons social-icon"><i class="fa fa-facebook"></i></li>
-          <li class="social-icon"><i class="fa fa-twitter"></i></li>
-          <li class="social-icon"><i class="fa fa-youtube"></i></li>
-          <li class="social-icon"><i class="fa fa-linkedin"></i></li>
-        </ul>
-      </nav>
+      <div class="element fade-in one">
+        <nav class="nav">
+            <ul class="nav-links">
+              <li class="nav-link"><a href="index.html">Home</a></li>
+              <li class="nav-link"><a href="resources.html">Resources</a></li>
+              <li class="nav-link"><a href="organizations.html">Organizations</a></li>
+              <li class="nav-link"><a href="contribute.html">Contribute</a></li>
+              <li class="nav-link"><a href="projects.html">Projects</a></li>
+            </ul>
+          <ul class="social-icons">
+            <li class="icons social-icon"><i class="fa fa-facebook"></i></li>
+            <li class="social-icon"><i class="fa fa-twitter"></i></li>
+            <li class="social-icon"><i class="fa fa-youtube"></i></li>
+          </ul>
+        </nav>
+      </div>
     </div>
-    <!-- Nav -->
-    <div class="row">
-      <div class="twelve columns" style="margin-top: 5%">
-        <div class="about"><p>Girl Can Code <span></span></p> </div>
+<!-- Content -->
+    <div class="container">
+      <div class="row">
+        <div class="twelve columns">
+          <div class="about"><p>Girl Can Code an initiative to create open-source projects that inspire women to code.</p></div>
+        </div>
       </div>
     </div>
   </div>
@@ -62,26 +65,24 @@
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
-<script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
-<script>var aboutContinued = [" is resource and an initiative to create open-source coding projects that inspire and engage and aspiring and existing female software engineers. " ];
-var i = 0;
-
-textChange(i);
-
-function textChange(counter) {
-  $.each(aboutContinued[counter].split(''), function(n, letter){
-    setTimeout(function(){
-      $('.about span').html($('.about span').html() + letter);
-      if(n == (aboutContinued[counter].length - 1)){
-        if( counter <  Object.keys(aboutContinued).length - 1){
-          counter++;
-          setTimeout(function(){
-            $('.about span').html('');
-            textChange(counter);
-          },1200);
-        }
+<script   src="https://code.jquery.com/jquery-3.1.0.js"   integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="   crossorigin="anonymous"></script>
+<script>
+  $('.about').each(function(argument) {
+    var $obj = $(this);
+    var txt = $(this).text();
+    var splitTxt = txt.split('');
+    $obj.html('');
+    var splitL = splitTxt.length;
+    var i = 0;
+    var timer = setInterval(function(argument) {
+      if(i < splitL){
+        $obj.append(splitTxt[i]);
+        i++;
+      }else{
+        clearInterval(timer);
       }
-    }, 110 * n);
+    },100);
   });
-}</script>
+
+</script>
 </html>
