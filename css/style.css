@@ -1,12 +1,21 @@
 /*Navigation*/
 .nav {
+  text-align: right;
+}
+
+.nav ul {
+  display: inline;
+}
+
+.nav-links {
 	margin:0;
 	padding:0;
   margin-top: 3%;
-  margin-left: 14%;
+  text-align: right;
 }
-.nav .nav-link  {
-	display:inline;
+
+.nav-links .nav-link {
+	display:inline-block;
 	padding:2%;
 	margin:0;
   text-decoration: none;
@@ -46,16 +55,16 @@ a {
 
 /*IGNORE ALL THE ABOVE*/
 
-.icons {
+.social-icons {
   text-align: right;
   padding-top:0;
 }
 
-.icons li {
+.social-icons li {
   display:inline-block;
   margin: 0 4px;
 }
-.icons i  {
+.social-icons i  {
     font-size: 24px;
     height: 64px;
     line-height: 64px;
@@ -71,7 +80,7 @@ a {
     -webkit-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
 }
-.icons i:hover, .icons i:focus {
+.social-icons i:hover, .social-icons i:focus {
   color: #fff;
   box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.8);
   -webkit-box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.8);
@@ -87,7 +96,7 @@ a {
   background-image: -webkit-linear-gradient(90deg, #2caab3 0%, #2c8cb3 100%);
   background-image: -ms-linear-gradient(90deg, #2caab3 0%, #2c8cb3 100%);
 }
-.icons .fa-twitter:hover, .icons .fa-twitter:focus {
+.social-icons .fa-twitter:hover, .social-icons .fa-twitter:focus {
   background-image: -webkit-linear-gradient(left, #2caab3 0%, #2c8cb3 100%);
   background-image: -moz-linear-gradient(left, #2caab3 0%, #2c8cb3 100%);
   background-image: -o-linear-gradient(left, #2caab3 0%, #2c8cb3 100%);
@@ -96,7 +105,7 @@ a {
   background-image: -ms-linear-gradient(90deg, #2caab3 0%, #2c8cb3 100%);
 }
 
-.icons .fa-facebook:hover, .icons .fa-facebook:focus {
+.social-icons .fa-facebook:hover, .social-icons .fa-facebook:focus {
   background-image: -webkit-linear-gradient(left, #6F5AC3  0%, #34495e 100%);
   background-image: -moz-linear-gradient(left, #6F5AC3  0%, #34495e 100%);
   background-image: -o-linear-gradient(left, #6F5AC3  0%, #34495e 100%);
@@ -104,7 +113,7 @@ a {
   background-image: -webkit-linear-gradient(90deg, #6F5AC3  0%, #34495e 100%);
   background-image: -ms-linear-gradient(90deg, #6F5AC3  0%, #34495e 100%);
 }
-.icons .fa-youtube:hover, .icons .fa-youtube:focus {
+.social-icons .fa-youtube:hover, .social-icons .fa-youtube:focus {
   background-image: -webkit-linear-gradient(left, #FF0684 0%, #34495e 100%);
   background-image: -moz-linear-gradient(left, #FF0684 0%, #e74c3c 100%);
   background-image: -o-linear-gradient(left, #FF0684  0%, #e74c3c 100%);
