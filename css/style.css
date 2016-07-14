@@ -21,6 +21,7 @@
 	margin:0;
   text-decoration: none;
 }
+/*Navigation Links*/
 a:link {
     color: #8E388E;
     text-decoration: none;
@@ -161,14 +162,14 @@ a {
   -moz-animation-delay: 10.0s;
   animation-delay: 10.0s;
 }
-/*
+
 .fade-in.two {
   -webkit-animation-delay: 1.2s;
   -moz-animation-delay:1.2s;
   animation-delay: 1.2s;
 }
 
-.fade-in.three {
+/*.fade-in.three {
   -webkit-animation-delay: 1.6s;
   -moz-animation-delay: 1.6s;
   animation-delay: 1.6s;
@@ -177,3 +178,25 @@ a {
 .element{
 
 }*/
+
+/*Project*/
+.project{
+  border: 1px solid #8E388E;
+  height: 200px;
+  width: 200px;
+}
+.project:hover{
+
+  text-decoration: none;
+  background-color: #8E388E;
+  height: 200px;
+  width: 200px;
+}
+.project:hover a{
+  color: #fff;
+  text-decoration: none;
+}
+.project h2{
+  text-align: center;
+  padding-top: 75px;
+}
