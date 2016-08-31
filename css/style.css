@@ -1,4 +1,6 @@
-
+body{
+  color: ;
+}
 /*Navigation*/
 .nav {
   text-align: right;
@@ -158,9 +160,9 @@ a {
 }
 
 .fade-in.one {
-  -webkit-animation-delay: 10.0s;
-  -moz-animation-delay: 10.0s;
-  animation-delay: 10.0s;
+  -webkit-animation-delay: 4.0s;
+  -moz-animation-delay: 4.0s;
+  animation-delay: 4.0s;
 }
 
 .fade-in.two {
@@ -199,4 +201,17 @@ a {
 .project h2{
   text-align: center;
   padding-top: 75px;
+}
+
+/*Logo*/
+.code-girl{
+  width: 23%;
+  padding-left: 1em;
+  40%
+}
+.desk{
+  width: 100%;
+  background-color: #5d5d5d;
+  height: 2.8em;
+  margin-top: -48px;
 }
